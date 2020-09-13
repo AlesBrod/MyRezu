@@ -3,7 +3,7 @@ html, body {
 
 	height:100%;
 	width: 100%;
-	font-family: 'Poppins' sans-serif;
+	font-family: Poppins, sans-serif;
 	color: #222;
 	background-color: rgb(239, 252, 237);
 	scroll-behavior: smooth;
@@ -34,11 +34,11 @@ html, body {
 }
 
 .navbar-brand img {
-	max-width: 30%;
+	max-width: 20%;
 }
 
 .navbar-nav li {
-	padding-right: 20px;
+	padding-right: 10px;
 }
 
 .nav-link {
@@ -77,8 +77,9 @@ html, body {
 .carousel-caption h3 {
 	font-size: 200%;
 	font-weight: 500;
-	text-shadow: 1px 1px 1px 10px #000;
+	text-shadow: 1px 1px 10px #000;
 }
+
 .btn-primary {
 	background-color: #397c6e;
 	border: 1px solid #27773b;
@@ -217,9 +218,7 @@ hr.light-100 {
   }
 
   @media (max-width: 820px) {
-	.nav-item {
-		font-size: 10px;
-	}
+	  
 	.carousel-caption {
 		top: 25%;
 		}
@@ -327,12 +326,39 @@ hr.light-100 {
 	padding: 4px 8px;
 	}
 
+	.btn-outline-secondary {
+		font-size: 90%;
+		padding: 4px 8px;
+		}
+	
+	.btn-primary {
+		font-size: 90%;
+		padding: 4px 8px;
+	}
+
 	.carousel-indicators {
 		display:none;
 	}
 	.display-4 {
 		font-size: 160%;
 	}
+
+	.lead {
+		font-size: .9em;
+	}
+	.gotopbtn {
+		position: fixed;
+		width: 30px;
+		height: 30px;
+		background: transparent;
+		bottom: 30px;
+		right: 30px;
+	
+		
+		line-height: 50px;
+		font-size: 30px;
+	}
+
 	.social a {
 		font-size: 2em;
 		padding: .7rem;
@@ -340,6 +366,26 @@ hr.light-100 {
 
 
 }
+
+@media (max-width: 467px) {
+	.navbar-brand {
+		font-size: 1%;
+		margin: auto;
+		
+	}
+	.navbar-toggler {
+		font-size: 30%;
+		margin: 0%;
+	}
+	
+	.carousel-caption {
+		top: 15%;
+		}
+	
+	
+		
+
+	}
 
 
 /*---Firefox Bug Fix --*/
