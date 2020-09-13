@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Rezu</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/43250060d0.js" crossorigin="anonymous"></script>
+
+	
+	<script src="chart.js"></script>
+	<link href="style.css" rel="stylesheet">
+	
+</head>
+<body>
+
+<!---Navigation--->
+<nav class = "navbar navbar-expand-md navbar-light bg-light sticky-top">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="index.html"><img src="img/logo2-2.png" /></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+		<span class = "navbar-toggler-icon"></span></button>
+		<div class = "collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class = "nav-item active">
+					<a class = "nav-link" href="index.html">Main Page</a>
+				</li>
+			
+			<li class = "nav-item">
+				<a class = "nav-link" href="#section-AboutMe">About Me</a>
+			</li>
+						<li class = "nav-item">
+				<a class = "nav-link" href="#section-resume">Resume</a>
+			</li>
+
+			<li class = "nav-item">
+				<a class = "nav-link" href="#contact">Contact</a>
+			</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<!---Image Slider--->
+<div id="slides" class="carousel slide carousel-fade" data-ride = "carousel" text-align = "center">
+<ul class="carousel-indicators">
+	<li data-target = "#slides" data-slide-to = "0" class = "active">
+	</li>
+	<li data-target = "#slides" data-slide-to = "1">
+	</li>
+	<li data-target = "#slides" data-slide-to = "2">
+	</li>
+</ul>
+
+<div class = "carousel-inner">
+	<div class="carousel-item active">
+		<img src = "img/kolaz.png">
+		<div class = "carousel-caption">
+			<h3>Hello, I'm</h3>
+			<h1 class="display-2">Ales Brodnansky</h1>
+
+			<a href = "#section-resume"><button type = "button" class="btn btn-outline-light btn-lg">My CV
+			</button></a>
+			<a href = "#contact"><button type = "button" class="btn btn-primary btn-lg">Contact</button></a>
+		</div>
+	</div>
+	<div class="carousel-item">
+		<img src = "img/kolaz_john.png">
+		<div class = "carousel-caption" id="ccapt2">
+			<h3>“The more I see, <strong> the less I know for sure</strong>.”</h3>
+			<h2 class="display-4"><strong>John Lennon</strong></h2>
+		</div>
+	</div>
+	<div class="carousel-item">
+		<img src = "img/kolaz_programy.png">
+	</div>
+	
+</div>
+
+<!---Slide Control--->
+
+<a class="carousel-control-prev"  href="#slides" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#slides" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+
+</div> 
+<!---Jumbotron--->
+<div class="container-fluid">
+	<div class="row jumbotron">
+		<div class="col-xs-12 col-sm-12 col-md-9 col-xl-10">
+			<p class="lead">Where is will, there is a way and everyday is new Experience</p></div>
+			<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+				<a href="#section-AboutMe"><button type = "button" class="btn btn-outline-secondary btn-lg">My life</button></a>
+		</div>
+
+	</div>
+</div>
+
+<!---Welcome Section--->
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4">Welcome to my personnal page</h1>
+		</div>
+		<hr>
+		<div class="col-12">
+
+			<p class="lead"> This site was cretated to reflect my everyday life a suppose to help other people to find who I am and skills I have.</p>
+		</div>
+
+	</div>
+
+</div>
+
+<!---Three Column Section--->
+<div class="container-fluid padding">
+	<div class="row text-center padding">
+		<div class="col-xs-12 col-sm-6 col-md-4">
+			<i class="fab fa-java"></i>
+			<h3>JAVA</h3>
+			<p>Java is my first language and I like to compare it with code in C#, which I can also write and read but I use it for GUI only.</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4">
+			<i class="fas fa-bold"></i>
+			<h3>BOOTSTRAP</h3>
+			<p>I love creating things with backward compatibility. 
+				For webpages I use Bootstrap and Visual Studio Code.</p>
+					
+			</div>
+		<div class="col-sm-12 col-md-4">
+			<i class="fas fa-code"></i>
+			<h3>CODE</h3>
+			<p>Everyday I learn new things, code is my passion, especially Java, C#, HTML, JavaScript, CSS3, SQL, and Python.
+			I'm looking after for commercial experience I would carry on growning.</p>
+						
+		</div>
+		</div>
+
+
+	</div>
+
+	<div class="container-fluid ">
+		<div class="row text-center ">
+			<div class="col-xs-12 col-sm-6 col-md-4">
+			<canvas id="java" height="130" width="130"></canvas>
+					<script>
+					var doughnutData = [
+										{
+											value: 70,
+											color:"#74cfae"
+										},
+										{
+											value : 30,
+											color : "#3c3c3c"
+										}
+									];
+									var myDoughnut = new Chart(document.getElementById("java").getContext("2d")).Doughnut(doughnutData);
+							</script>
+							</div>
+			<div class="col-xs-12 col-sm-6 col-md-4">
+				<canvas id="bootstrap" height="130" width="130"></canvas>
+					<script>
+					var doughnutData = [
+										{
+											value: 60,
+											color:"#74cfae"
+										},
+										{
+											value : 40,
+											color : "#3c3c3c"
+										}
+									];
+									var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
+							</script>
+			
+				</div>
+			<div class="col-sm-12 col-md-4">
+				<canvas id="code" height="130" width="130"></canvas>
+				<script>
+				var doughnutData = [
+									{
+										value: 90,
+										color:"#74cfae"
+									},
+									{
+										value : 10,
+										color : "#3c3c3c"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("code").getContext("2d")).Doughnut(doughnutData);
+						</script>
+			
+			</div>
+			</div>
+	
+	
+		</div>
+		
+
+
+<hr class="my-4" />
+<!---Fixed background--->
+<figure id = "contact">
+	<div class="fixed-wrap">
+		<div id="fixed">
+		</div>
+	</div>
+</figure>
+
+<!---Email Section--->
+<a class="btn btn-primary btn-lg email" data-toggle="collapse" data-target="#email">Contact me</a>
+<div id="email" class="collapse">
+	<div class="container padding">
+		<div class="row text-center">
+
+<!---Contact Form--->
+<section class="mb-4">
+
+    <!---Heading--->
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact Form</h2>
+    <!---Description--->
+    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact me directly.</p>
+
+    <div class="row">
+
+       
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+              <div class="row">
+                   
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Your name</label>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Your email</label>
+                        </div>
+                    </div>
+                    
+                </div>
+             
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Subject</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Your message</label>
+                        </div>
+
+                    </div>
+                </div>
+               
+            </form>
+
+            <div class="text-center">
+                <a class="btn btn-primary btn-lg" id = "Send" onclick="document.getElementById('contact-form').submit();">Send</a>
+            </div>
+        </div>
+       
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>Bootle, UK</p>
+                </li>
+
+                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p>+44 (0) 7548 966540</p>
+                </li>
+
+                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p>ales.brodnansky@gmail.com</p>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+
+</section>
+
+			</div>
+	
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--- My Resume -->
+<section class="site-section " id="section-resume">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 mb-5">
+				<div class="section-heading text-center">
+					<h2>My <strong>Resume</strong></h2>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<h2 class="mb-5">Education</h2>
+				<div class="resume-item mb-4">
+					<span class="date"><span class="icon-calendar"></span> June 2019 - Present</span>
+					<h3>Software Development</h3>
+					<p>Even I'm graduated bussiness man, I started new epoch of my life last year, as code and developing new features always was my passion.</p>
+					<span class="school">uCertify online school</span>
+				</div>
+
+				<div class="resume-item mb-4">
+					<span class="date"><span class="icon-calendar"></span> Sep 2001 - June 2005
+				</span>
+					<h3>Bussiness Academy</h3>
+					<p>Grade of: Economy (1), Accountancy(1), Math(1), Computer Science(1)</p>
+					<span class="school">Bussiness Academy Zatec, Czech Republic</span>
+									
+				</div>
+				
+				</div>
+			<div class="col-md-6">
+
+
+				<h2 class="mb-5">Experience</h2>
+
+				<div class="resume-item mb-4">
+					<span class="date"><span class="icon-calendar"></span> May 2013 - July 2019
+				</span>
+					<h3>Manufacturing Technician
+					</h3>
+					<p>Delivering the Packing plan for my line with the highest levels of service and
+						standards, inline with the SQCDME Key Performance Indicator’s, through
+						DaMaWay (an internal process and structure) tools and techniques. </p>
+					<span class="school">Nutricia Liverpool</span>
+				</div>
+
+				<div class="resume-item mb-4">
+					<span class="date"><span class="icon-calendar"></span> May 2011 - May 2013</span>
+					<h3>Manufacturing Technician</h3>
+					<p>Providing a comprehensive production service and packing a range of
+						beverages whilst adhering to customer service levels, quality conformance
+						and within budget, in a safe and professional manner</p>
+					<span class="school">Manufacturing Technician</span>
+				</div>
+
+				<div class="resume-item mb-4">
+					<span class="date"><span class="icon-calendar"></span> March 2009 - Jun 2011
+				</span>
+					<h3>QA Technician</h3>
+					<p>Conducting temperature verification checks, calibration
+						checks and record the results, GMP audits, CCP verification relevant to the
+						area being worked in and report any Non-Conformances through the
+						proper processes, conducting equipment checks, ensure the timely
+						collection of chemical and microbiological samples</p>
+					<span class="school">Greencore Sushi Crosby</span>
+				</div>
+			</div>					
+		</div>
+	</div>
+	<div class="text-center text-md-center">
+		<a href = "files/cv.pdf"><button type = "button" class="btn btn-primary btn-lg">Download CV</button></a>
+		</div>
+</section> 
+<hr/>
+<!---Two Column Section--->
+<div class="container-fluid padding" id = "section-AboutMe">
+	<div class="row padding">
+		<div class="col-md-12 col-lg-6">
+			<h2>About <strong>Me</strong></h2>
+			<p>My world turns around many things. I love to code even I haven't got problem with physical work too. 
+				My big passion is woodworking, when I can think about quite complex solutions for my little projects.</p>
+			<p>
+				As my code's knowledge grows everyday, I'm looking for proper commercial experience as Junior Software Developer. This subject I study 2nd year under uCertify online school.
+			</p>
+			<p>
+			<br />
+
+		</div>
+		<div class="col-lg-6">
+			<img src = "img/3.png" class="img-fluid"/>
+	</div>
+</div>
+</div>
+<hr class="my-4" />
+
+<!---Connect--->
+<div class="container-fluid padding">
+<div class="row text-center padding">
+	<div class="col-12">
+		<h2>Connect</h2>
+	</div>
+	<div class="col-12 social padding">
+		<a href="http://www.facebook.com/ales.brodnansky"><i class="fab fa-facebook"></i></a>
+		<a href="https://www.linkedin.com/in/ales-brodnansky-611ba91b5"> <i class="fab fa-linkedin"></i></a>
+		
+	</div>
+</div>
+</div>
+
+<!---Footer--->
+<footer>
+	<div class="container-fluid text-centered padding">
+		<div class="row text-center">
+			<div class="col-md-12">
+				<img src="img/logo2-2.png" />
+				<hr class="light" />
+				<p>
+					+44 (0) 7548 966 540
+				</p>
+				<p>
+					ales.brodnansky@gmail.com
+				</p>
+					<h5>&copy; Ales Brodnansky</h5>
+			</div>
+		</div>
+	</div>
+</footer>
+<a class = "gotopbtn" href="#"> <i class="fas fa-arrow-circle-up"></i></a>
+</body>
+</html>
