@@ -96,7 +96,7 @@ html, body {
 }
 
 .jumbotron {
-	padding: 1rem;
+	padding: 0.8rem;
 	border-radius: 0;
 }
 
@@ -252,69 +252,11 @@ hr.light-100 {
 		display: none;
 	}
 
-	.carousel-caption {
-		top: 25%;
-		}
-
-	.carousel-caption h1 {
-		font-size: 150%;
-	}
-
-	.carousel-caption h3 {
-		font-size: 140%;
-		font-weight: 400;
-		padding-bottom: .2rem;
-	}
-.carousel-caption .btn {
-	font-size: 95%;
-	padding: 8px 14px;
-}
-.display-4 {
-	font-size: 200%;
-}
-.social a {
-	font-size: 2.5em;
-	padding: 1.2rem;
-}
-}
-@media (max-width: 600px) {
 	
-	canvas {
-		display: none;
-	}
-	.carousel-caption {
-		top: 25%;
-		}
+}
 
-	.carousel-caption h1 {
-		font-size: 150%;
-	}
-
-	.carousel-caption h3 {
-		font-size: 140%;
-		font-weight: 400;
-		padding-bottom: .2rem;
-	}
-.carousel-caption .btn {
-	font-size: 95%;
-	padding: 8px 14px;
-}
-.display-4 {
-	font-size: 200%;
-}
-.social a {
-	font-size: 2.5em;
-	padding: 1.2rem;
-}
-}
 @media (max-width: 576px) {
-	.carousel-caption {
-		top: 25%;
-		}
 
-	.carousel-caption h1 {
-		font-size: 150%;
-	}
 
 	.carousel-caption h3 {
 		font-size: 110%;
@@ -353,8 +295,6 @@ hr.light-100 {
 		background: transparent;
 		bottom: 30px;
 		right: 30px;
-	
-		
 		line-height: 50px;
 		font-size: 30px;
 	}
@@ -381,12 +321,16 @@ hr.light-100 {
 	.carousel-caption {
 		top: 15%;
 		}
-	
-	
-		
-
 	}
 
+@media (max-width: 412px) {
+
+	.btn-outline-secondary {
+		font-size: 70%;
+		padding: 2px 4px;
+		}
+
+}
 
 /*---Firefox Bug Fix --*/
 .carousel-item {
